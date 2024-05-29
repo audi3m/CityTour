@@ -13,6 +13,10 @@
 		D4228C9A2C076E0800EC924A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D4228C992C076E0800EC924A /* Base */; };
 		D4228C9C2C076E0900EC924A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4228C9B2C076E0900EC924A /* Assets.xcassets */; };
 		D4228C9F2C076E0900EC924A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D4228C9E2C076E0900EC924A /* Base */; };
+		D4228CA72C076F0800EC924A /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228CA62C076F0800EC924A /* CityInfo.swift */; };
+		D4228CAA2C076F5D00EC924A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D4228CA92C076F5D00EC924A /* Kingfisher */; };
+		D4228CAE2C07713200EC924A /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228CAC2C07713200EC924A /* CityTableViewCell.swift */; };
+		D4228CAF2C07713200EC924A /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4228CAD2C07713200EC924A /* CityTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		D4228C9B2C076E0900EC924A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4228C9E2C076E0900EC924A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4228CA02C076E0900EC924A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4228CA62C076F0800EC924A /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
+		D4228CAC2C07713200EC924A /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		D4228CAD2C07713200EC924A /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4228CAA2C076F5D00EC924A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +66,24 @@
 			children = (
 				D4228C922C076E0800EC924A /* AppDelegate.swift */,
 				D4228C942C076E0800EC924A /* SceneDelegate.swift */,
-				D4228C962C076E0800EC924A /* ViewController.swift */,
+				D4228CA62C076F0800EC924A /* CityInfo.swift */,
 				D4228C982C076E0800EC924A /* Main.storyboard */,
+				D4228C962C076E0800EC924A /* ViewController.swift */,
+				D4228CAB2C0770FF00EC924A /* Cell */,
 				D4228C9B2C076E0900EC924A /* Assets.xcassets */,
 				D4228C9D2C076E0900EC924A /* LaunchScreen.storyboard */,
 				D4228CA02C076E0900EC924A /* Info.plist */,
 			);
 			path = CityTour;
+			sourceTree = "<group>";
+		};
+		D4228CAB2C0770FF00EC924A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D4228CAD2C07713200EC924A /* CityTableViewCell.xib */,
+				D4228CAC2C07713200EC924A /* CityTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = CityTour;
+			packageProductDependencies = (
+				D4228CA92C076F5D00EC924A /* Kingfisher */,
+			);
 			productName = CityTour;
 			productReference = D4228C8F2C076E0800EC924A /* CityTour.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = D4228C862C076E0800EC924A;
+			packageReferences = (
+				D4228CA82C076F5D00EC924A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D4228C902C076E0800EC924A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +152,7 @@
 			files = (
 				D4228C9C2C076E0900EC924A /* Assets.xcassets in Resources */,
 				D4228C9F2C076E0900EC924A /* Base in Resources */,
+				D4228CAF2C07713200EC924A /* CityTableViewCell.xib in Resources */,
 				D4228C9A2C076E0800EC924A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +166,8 @@
 			files = (
 				D4228C972C076E0800EC924A /* ViewController.swift in Sources */,
 				D4228C932C076E0800EC924A /* AppDelegate.swift in Sources */,
+				D4228CAE2C07713200EC924A /* CityTableViewCell.swift in Sources */,
+				D4228CA72C076F0800EC924A /* CityInfo.swift in Sources */,
 				D4228C952C076E0800EC924A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,8 +326,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +336,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ray.CityTour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +359,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +369,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ray.CityTour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4228CA82C076F5D00EC924A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4228CA92C076F5D00EC924A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4228CA82C076F5D00EC924A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4228C872C076E0800EC924A /* Project object */;
 }
