@@ -17,6 +17,7 @@
 		D4228CAA2C076F5D00EC924A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D4228CA92C076F5D00EC924A /* Kingfisher */; };
 		D4228CAE2C07713200EC924A /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228CAC2C07713200EC924A /* CityTableViewCell.swift */; };
 		D4228CAF2C07713200EC924A /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4228CAD2C07713200EC924A /* CityTableViewCell.xib */; };
+		D4CCFBE82C07FF6B00208FB9 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCFBE72C07FF6B00208FB9 /* String+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D4228CA62C076F0800EC924A /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
 		D4228CAC2C07713200EC924A /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		D4228CAD2C07713200EC924A /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		D4CCFBE72C07FF6B00208FB9 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				D4228C982C076E0800EC924A /* Main.storyboard */,
 				D4228C962C076E0800EC924A /* ViewController.swift */,
 				D4228CAB2C0770FF00EC924A /* Cell */,
+				D4CCFBE62C07FF5B00208FB9 /* Extensions */,
 				D4228C9B2C076E0900EC924A /* Assets.xcassets */,
 				D4228C9D2C076E0900EC924A /* LaunchScreen.storyboard */,
 				D4228CA02C076E0900EC924A /* Info.plist */,
@@ -84,6 +87,14 @@
 				D4228CAC2C07713200EC924A /* CityTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		D4CCFBE62C07FF5B00208FB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4CCFBE72C07FF6B00208FB9 /* String+Ex.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				D4228C972C076E0800EC924A /* ViewController.swift in Sources */,
 				D4228C932C076E0800EC924A /* AppDelegate.swift in Sources */,
 				D4228CAE2C07713200EC924A /* CityTableViewCell.swift in Sources */,
+				D4CCFBE82C07FF6B00208FB9 /* String+Ex.swift in Sources */,
 				D4228CA72C076F0800EC924A /* CityInfo.swift in Sources */,
 				D4228C952C076E0800EC924A /* SceneDelegate.swift in Sources */,
 			);

@@ -24,6 +24,10 @@ class CityTableViewCell: UITableViewCell {
         configureCell()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
+    
     func configureCell() {
         nameLabel.font = .systemFont(ofSize: 20, weight: .bold)
         nameLabel.textColor = .white
@@ -42,7 +46,9 @@ class CityTableViewCell: UITableViewCell {
         nameLabel.text = data.name
         
         let url = URL(string: data.city_image)
-        cityImageView.kf.setImage(with: url, placeholder: UIImage(systemName: "suitcase.rolling"))
+        let image = UIImage(systemName: "suitcase.rolling")!
+        cityImageView.kf.setImage(with: url, placeholder: image)
+        
         
         explainLabel.text = data.city_explain
     }
