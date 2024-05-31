@@ -20,6 +20,7 @@ class ViewController: UIViewController {
             tableView.reloadData()
         }
     }
+    
     var segmentedFilterList: [City] = []
     var searchFilteredList: [City] = []
     
