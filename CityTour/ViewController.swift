@@ -15,7 +15,11 @@ class ViewController: UIViewController {
     
     let list = CityInfo.city
     
-    var filteredList: [City] = []
+    var filteredList: [City] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     var segmentedFilterList: [City] = []
     var searchFilteredList: [City] = []
     
@@ -32,16 +36,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func segmentActions(_ sender: UISegmentedControl) {
-        
         switch sender.selectedSegmentIndex {
         case 0: filteredList = searchFilteredList
         case 1: filteredList = searchFilteredList.filter { $0.domestic_travel }
         case 2: filteredList = searchFilteredList.filter { !$0.domestic_travel }
         default: break
         }
-        
-        tableView.reloadData()
-        
     }
 }
 
@@ -54,7 +54,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CityTableViewCell.id, for: indexPath) as! CityTableViewCell
         let data = filteredList[indexPath.row]
         cell.configureData(data: data)
-        
         return cell
     }
 }
@@ -90,7 +89,6 @@ extension ViewController: UISearchBarDelegate {
         }
         filteredList = searchFilteredList
         view.endEditing(true)
-        tableView.reloadData()
     }
     
     func containsKeyword(data: City, text: String) -> Bool {

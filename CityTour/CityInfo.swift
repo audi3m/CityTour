@@ -17,6 +17,8 @@ struct City {
         city_name + " | " + city_english_name
     }
     
+    
+    
 }
  
 struct CityInfo {

@@ -10,8 +10,6 @@ import Kingfisher
 
 class CityTableViewCell: UITableViewCell {
     
-    static let id = "CityTableViewCell"
-    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var cityImageView: UIImageView!
     @IBOutlet var explainLabel: UILabel!
@@ -20,7 +18,6 @@ class CityTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print(#function)
         configureCell()
     }
     
@@ -34,8 +31,12 @@ class CityTableViewCell: UITableViewCell {
         
         cityImageView.backgroundColor = .systemGray6
         cityImageView.contentMode = .scaleAspectFill
+        cityImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
+        cityImageView.layer.cornerRadius = 20
         
         explainBackgroundView.backgroundColor = .black.withAlphaComponent(0.5)
+        explainBackgroundView.layer.maskedCorners = [.layerMaxXMaxYCorner]
+        explainBackgroundView.layer.cornerRadius = 20
         
         explainLabel.font = .systemFont(ofSize: 14)
         explainLabel.textColor = .white.withAlphaComponent(0.8)
@@ -46,13 +47,11 @@ class CityTableViewCell: UITableViewCell {
         nameLabel.text = data.name
         
         let url = URL(string: data.city_image)
-        let image = UIImage(systemName: "suitcase.rolling")!
-        cityImageView.kf.setImage(with: url, placeholder: image)
-        
+        cityImageView.kf.setImage(with: url, placeholder: UIImage.suitcase)
         
         explainLabel.text = data.city_explain
+        
     }
-    
     
 }
 

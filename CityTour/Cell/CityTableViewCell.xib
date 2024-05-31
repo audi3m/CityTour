@@ -31,7 +31,7 @@
                         <rect key="frame" x="18" y="104" width="322" height="28"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQQ-A9-0lN">
-                                <rect key="frame" x="6" y="6" width="310" height="16"/>
+                                <rect key="frame" x="6" y="6" width="41.333333333333336" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,7 +41,6 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="28" id="3SL-Sg-ABw"/>
                             <constraint firstItem="pQQ-A9-0lN" firstAttribute="top" secondItem="8sp-xo-UCW" secondAttribute="top" constant="6" id="4Dq-Gz-eM6"/>
-                            <constraint firstAttribute="trailing" secondItem="pQQ-A9-0lN" secondAttribute="trailing" constant="6" id="9Px-Uq-Ky9"/>
                             <constraint firstItem="pQQ-A9-0lN" firstAttribute="leading" secondItem="8sp-xo-UCW" secondAttribute="leading" constant="6" id="9wo-M4-gVo"/>
                             <constraint firstAttribute="bottom" secondItem="pQQ-A9-0lN" secondAttribute="bottom" constant="6" id="VFQ-J1-dCp"/>
                         </constraints>

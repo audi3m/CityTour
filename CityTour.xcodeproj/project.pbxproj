@@ -18,6 +18,8 @@
 		D4228CAE2C07713200EC924A /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4228CAC2C07713200EC924A /* CityTableViewCell.swift */; };
 		D4228CAF2C07713200EC924A /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4228CAD2C07713200EC924A /* CityTableViewCell.xib */; };
 		D4CCFBE82C07FF6B00208FB9 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCFBE72C07FF6B00208FB9 /* String+Ex.swift */; };
+		D4F2B68D2C09CC3500F575C2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2B68C2C09CC3500F575C2 /* Protocols.swift */; };
+		D4F2B6932C09D53200F575C2 /* uiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2B6922C09D53200F575C2 /* uiImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D4228CAC2C07713200EC924A /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		D4228CAD2C07713200EC924A /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		D4CCFBE72C07FF6B00208FB9 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		D4F2B68C2C09CC3500F575C2 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		D4F2B6922C09D53200F575C2 /* uiImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				D4CCFBE72C07FF6B00208FB9 /* String+Ex.swift */,
+				D4F2B68C2C09CC3500F575C2 /* Protocols.swift */,
+				D4F2B6922C09D53200F575C2 /* uiImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4228C972C076E0800EC924A /* ViewController.swift in Sources */,
+				D4F2B6932C09D53200F575C2 /* uiImage.swift in Sources */,
 				D4228C932C076E0800EC924A /* AppDelegate.swift in Sources */,
+				D4F2B68D2C09CC3500F575C2 /* Protocols.swift in Sources */,
 				D4228CAE2C07713200EC924A /* CityTableViewCell.swift in Sources */,
 				D4CCFBE82C07FF6B00208FB9 /* String+Ex.swift in Sources */,
 				D4228CA72C076F0800EC924A /* CityInfo.swift in Sources */,
